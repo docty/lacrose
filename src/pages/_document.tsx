@@ -3,6 +3,7 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
+      <title>Lacrose</title>
       <Head />
       <body>
         <Main />
@@ -11,3 +12,5 @@ export default function Document() {
     </Html>
   )
 }
+
+
