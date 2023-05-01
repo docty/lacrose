@@ -1,11 +1,10 @@
-import { IWidget } from "@/types"
+import Image from "next/image"
 
-
-export const CallToAction = (props: IWidget) => {
+export const CallToAction1 = () => {
 
     return (
-        <section className="bg-blue-600 2xl:py-24 2xl:bg-white">
-            <div className="px-4 mx-auto overflow-hidden bg-blue-600 max-w-7xl sm:px-6 lg:px-8">
+        <section className="bg-gray-600 2xl:py-24 2xl:bg-white">
+            <div className="px-4 mx-auto overflow-hidden bg-gray-600 max-w-7xl sm:px-6 lg:px-8">
                 <div className="py-10 sm:py-16 lg:py-24 2xl:pl-24">
                     <div className="grid items-center grid-cols-1 gap-y-12 lg:grid-cols-2 lg:gap-x-8 2xl:gap-x-20">
                         <div>
@@ -14,11 +13,11 @@ export const CallToAction = (props: IWidget) => {
 
                             <div className="flex flex-row items-center mt-8 space-x-4 lg:mt-12">
                                 <a href="#" title="" className="flex" role="button">
-                                    <img className="w-auto h-14" src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-app-store.svg" alt="" />
+                                    <Image className="w-auto h-14" src="/img/gallery-image/1.jpg" alt="" height={'0'} width={'0'} sizes={'md'}/>
                                 </a>
 
                                 <a href="#" title="" className="flex" role="button">
-                                    <img className="w-auto h-14" src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/btn-play-store.svg" alt="" />
+                                    <Image className="w-auto h-14" src="/img/gallery-image/1.jpg" alt="" height={'0'} width={'0'} sizes={'md'} />
                                 </a>
                             </div>
                         </div>
@@ -27,7 +26,7 @@ export const CallToAction = (props: IWidget) => {
                             <svg className="absolute inset-x-0 bottom-0 left-1/2 -translate-x-1/2 -mb-48 lg:-mb-72 text-yellow-300 w-[460px] h-[460px] sm:w-[600px] sm:h-[600px]" fill="currentColor" viewBox="0 0 8 8">
                                 <circle cx="4" cy="4" r="3" />
                             </svg>
-                            <img className="relative w-full max-w-xs mx-auto -mb-60 lg:-mb-64" src="https://cdn.rareblocks.xyz/collection/celebration/images/cta/8/iphone-mockup.png" alt="" />
+                            <Image className="relative w-full max-w-xs mx-auto -mb-60 lg:-mb-64" height={'0'} width={'0'} sizes={'md'} src="/img/gallery-image/1.jpg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -39,7 +38,7 @@ export const CallToAction = (props: IWidget) => {
 }
 
 
-export const CallToAction2 = (props: IWidget) => {
+export const CallToAction2 = () => {
 
     return (
         <section className="relative py-10 overflow-hidden bg-black sm:py-16 lg:py-24 xl:py-32">
@@ -91,7 +90,7 @@ export const CallToAction2 = (props: IWidget) => {
 }
 
 
-export const CallToAction3 = (props: IWidget) => {
+export const CallToAction3 = () => {
 
     return (
 

@@ -1,3 +1,4 @@
+import Image from "next/image"
 import React from "react"
 
 
@@ -13,7 +14,7 @@ export const Testimony1 = () => {
                     <div className="overflow-hidden bg-white rounded-md shadow">
                         <div className="px-8 py-12">
                             <div className="relative w-24 h-24 mx-auto">
-                                <img className="relative object-cover w-24 h-24 mx-auto rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-1.jpg" alt="" />
+                                <Image className="relative object-cover w-24 h-24 mx-auto rounded-full" src="/img/gallery-image/1.jpg" alt="" width={0} height={0} sizes="md"/>
                                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                                     <svg className="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                         <path
@@ -33,7 +34,7 @@ export const Testimony1 = () => {
                     <div className="overflow-hidden bg-white rounded-md shadow">
                         <div className="px-8 py-12">
                             <div className="relative w-24 h-24 mx-auto">
-                                <img className="relative object-cover w-24 h-24 mx-auto rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-2.jpg" alt="" />
+                                <Image className="relative object-cover w-24 h-24 mx-auto rounded-full" src="/img/gallery-image/2.jpg" alt="" width={0} height={0} sizes="md"/>
                                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                                     <svg className="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                         <path
@@ -53,7 +54,7 @@ export const Testimony1 = () => {
                     <div className="overflow-hidden bg-white rounded-md shadow">
                         <div className="px-8 py-12">
                             <div className="relative w-24 h-24 mx-auto">
-                                <img className="relative object-cover w-24 h-24 mx-auto rounded-full" src="https://cdn.rareblocks.xyz/collection/celebration/images/testimonials/1/avatar-3.jpg" alt="" />
+                                <Image className="relative object-cover w-24 h-24 mx-auto rounded-full" src="/img/gallery-image/3.jpg" alt="" width={0} height={0} sizes="md"/>
                                 <div className="absolute top-0 right-0 flex items-center justify-center bg-blue-600 rounded-full w-7 h-7">
                                     <svg className="w-4 h-4 text-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
                                         <path
