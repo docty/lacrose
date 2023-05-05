@@ -24,9 +24,9 @@ const Sidebar = () => {
       <p className='font-bold text-3xl text-white'>Lacrose</p>
       <Box className='my-8 overflow-y-auto h-full'>
         <NavItem count={'1'} name={'Navbar'} link={'/navbar'} />
-        <NavItem count={'3'} name={'Call To Action'} link={'/call-to-action'} />
-        <NavItem count={'3'} name={'Feature'} link={'/feature'} />
-        <NavItem count={'6'} name={'Testimony'} link={'/testimony'} />
+        <NavItem count={'12'} name={'Call To Action'} link={'/call-to-action'} />
+        <NavItem count={'11'} name={'Feature'} link={'/feature'} />
+        <NavItem count={'9'} name={'Testimony'} link={'/testimony'} />
         <NavItem count={'4'} name={'Blog'} link={'/blog'} />
         <NavItem count={'6'} name={'Price'} link={'/price'} />
         <NavItem count={'2'} name={'Hero'} link={'/hero'} />
