@@ -1,0 +1,9 @@
+  <div className='w-2/12 border fixed top-0 bottom-0 p-2 px-4 bg-slate-800'>
+      <p className='font-bold text-3xl text-white'>Lacrose</p>
+      <Box className='my-8 overflow-y-auto h-full'>
+        
+        
+     
+        <NavItem count={'6'} name={'Contact'} link={'/contact'} /> */}
+      </Box>
+    </div>

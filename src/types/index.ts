@@ -1,3 +1,5 @@
+import { ReactElement } from "react";
+
 export interface IWidget {
     copy: (content: string) => void;
 }
@@ -14,5 +16,6 @@ export interface IIntroduction {
 
 export interface IBody {
     count: string;
-    component: any;
+    component: JSX.Element;
+    copyCode?: string;
 }

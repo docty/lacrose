@@ -1,19 +1,52 @@
 import { IBody } from "@/types";
-import { IconButton, Tooltip, Typography } from "@mui/material"
-import { IoCopyOutline } from "react-icons/io5";
+import { IconButton, Tooltip } from "@mui/material"
+import { IoCopyOutline, IoDesktopOutline, IoPhonePortraitOutline } from "react-icons/io5";
+import ReactDOMServer from 'react-dom/server';
+import { useEffect, useRef } from "react";
+const Body = ({ component, count, copyCode }: IBody) => {
 
-const Body = ({component, count}: IBody) => {
+    const iframeRef = useRef(null)
+    const copyToClipBoard = () => {
+        navigator.clipboard.writeText(ReactDOMServer.renderToStaticMarkup(component))
+    }
+
+    const mobileView = () => {
+        window.open('http://localhost:3001/hero', '_blank', 'width=375,height=667')
+    }
+
+    useEffect(() => {
+
+    }, [])
     return (
-        <div>
+        <div className="">
             <div className="flex justify-between">
-                <Typography className={'font-bold text-xl'}>Component #{count}</Typography>
-                <Tooltip title="Copy">
-                    <IconButton>
-                        <IoCopyOutline />
-                    </IconButton>
-                </Tooltip>
+                <p className={'font-bold text-xl'}>Component #{count}</p>
+                <div>
+                    <Tooltip title="Copy">
+                        <IconButton onClick={copyToClipBoard}>
+                            <IoDesktopOutline />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Mobile">
+                        <IconButton onClick={mobileView}>
+                            <IoPhonePortraitOutline />
+                        </IconButton>
+                    </Tooltip>
+                    <Tooltip title="Copy">
+                        <IconButton onClick={copyToClipBoard}>
+                            <IoCopyOutline />
+                        </IconButton>
+                    </Tooltip>
+                </div>
+
+
             </div>
-             {component}
+            <iframe ref={iframeRef}>
+
+            </iframe>
+            {component}
+
+
         </div>
     )
 }
